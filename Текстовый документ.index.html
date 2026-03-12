@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Бусинка</title>
+
+<style>
+body{
+    margin:0;
+    background:#e79aa3;
+    font-family:Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+    color:white;
+}
+
+h1, p, .heart{
+    opacity:0;
+    transition:opacity 1.5s;
+}
+
+h1{font-size:48px;}
+p{font-size:22px;}
+.heart{font-size:50px;}
+</style>
+</head>
+
+<body>
+
+<div>
+    <h1 id="t1">Бусинка</h1>
+    <p id="t2">Прости пожалуйста, любовь моя 🥺</p>
+    <p id="t3">Я тебя невероятно сильно люблю!</p>
+    <div class="heart" id="t4">❤️</div>
+</div>
+
+<script>
+setTimeout(()=>{document.getElementById("t1").style.opacity=1;},1000);
+setTimeout(()=>{document.getElementById("t2").style.opacity=1;},3000);
+setTimeout(()=>{document.getElementById("t3").style.opacity=1;},5000);
+setTimeout(()=>{document.getElementById("t4").style.opacity=1;},7000);
+</script>
+
+</body>
+</html>
